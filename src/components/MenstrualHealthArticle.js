@@ -23,11 +23,11 @@ const MenstrualHealthArticle = () => {
             <span className="nav-toggle-icon"></span>
           </button>
           <ul className={`nav-menu ${isMenuOpen ? 'nav-menu-active' : ''}`}>
-            <li className="nav-item"><Link to="/about" className="nav-link" onClick={closeMenu}>About</Link></li>
-            <li className="nav-item"><Link to="/media-relations" className="nav-link" onClick={closeMenu}>Media Relations</Link></li>
+            <li className="nav-item"><Link to="/home" className="nav-link" onClick={closeMenu}>Home</Link></li>
             <li className="nav-item"><Link to="/resume" className="nav-link" onClick={closeMenu}>Resume</Link></li>
-            <li className="nav-item"><Link to="/articles" className="nav-link" onClick={closeMenu}>Articles</Link></li>
-            <li className="nav-item"><Link to="/media-cutting" className="nav-link" onClick={closeMenu}>Media Cutting</Link></li>
+            <li className="nav-item"><Link to="/media-mentions" className="nav-link" onClick={closeMenu}>Media Mentions</Link></li>
+            <li className="nav-item"><Link to="/opinions-features" className="nav-link" onClick={closeMenu}>Opinions & Features</Link></li>
+            <li className="nav-item"><Link to="/press-contributions" className="nav-link" onClick={closeMenu}>Press Contributions</Link></li>
             <li className="nav-item"><Link to="/social-media-management" className="nav-link" onClick={closeMenu}>Social Media Management</Link></li>
             <li className="nav-item"><Link to="/contact" className="nav-link" onClick={closeMenu}>Contact</Link></li>
           </ul>

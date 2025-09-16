@@ -17,12 +17,18 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<AboutMePage />} />
+          <Route path="/home" element={<AboutMePage />} />
           <Route path="/about" element={<AboutMePage />} />
+          <Route path="/media-mentions" element={<MediaRelations />} />
           <Route path="/media-relations" element={<MediaRelations />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/opinions-features" element={<Articles />} />
+          <Route path="/opinions-features/menstrual-health" element={<MenstrualHealthArticle />} />
+          <Route path="/opinions-features/youth-unemployment" element={<YouthUnemploymentArticle />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/articles/menstrual-health" element={<MenstrualHealthArticle />} />
           <Route path="/articles/youth-unemployment" element={<YouthUnemploymentArticle />} />
+          <Route path="/press-contributions" element={<MediaCutting />} />
           <Route path="/media-cutting" element={<MediaCutting />} />
           <Route path="/social-media-management" element={<SocialMediaManagement />} />
           <Route path="/contact" element={<Contact />} />
