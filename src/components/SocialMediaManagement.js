@@ -118,7 +118,7 @@ const SocialMediaManagement = () => {
             <li className="nav-item"><Link to="/media-mentions" className="nav-link" onClick={closeMenu}>Media Mentions</Link></li>
             <li className="nav-item"><Link to="/opinions-features" className="nav-link" onClick={closeMenu}>Opinions & Features</Link></li>
             <li className="nav-item"><Link to="/press-contributions" className="nav-link" onClick={closeMenu}>Press Contributions</Link></li>
-            <li className="nav-item"><Link to="/social-media-management" className="nav-link" onClick={closeMenu}>Social Media Management</Link></li>
+            <li className="nav-item"><Link to="/social-media-management" className="nav-link" onClick={closeMenu}>Social Media Content</Link></li>
             <li className="nav-item"><Link to="/contact" className="nav-link" onClick={closeMenu}>Contact</Link></li>
           </ul>
         </div>
@@ -246,6 +246,144 @@ const SocialMediaManagement = () => {
           </div>
         </section>
       </main>
+
+      {/* Tools Section */}
+      <section className="tools-section" style={{
+        padding: '60px 20px',
+        backgroundColor: '#f8f9fa',
+        textAlign: 'center'
+      }}>
+        <div className="tools-container" style={{
+          maxWidth: '1200px',
+          margin: '0 auto'
+        }}>
+          <h2 style={{
+            fontSize: '2rem',
+            marginBottom: '40px',
+            color: '#2c3e50',
+            fontWeight: '600'
+          }}>Digital Toolkit</h2>
+          <div className="tools-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))',
+            gap: '30px',
+            justifyItems: 'center',
+            alignItems: 'center'
+          }}>
+            {/* NotebookLM */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="/logo/notebooklm_logo-freelogovectors.net_.png"
+                   alt="NotebookLM"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>NotebookLM</span>
+            </div>
+
+            {/* Miro */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="https://cdn.worldvectorlogo.com/logos/miro-2.svg"
+                   alt="Miro"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>Miro</span>
+            </div>
+
+            {/* Perplexity */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="/logo/Perplexity-Logo.png"
+                   alt="Perplexity"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>Perplexity</span>
+            </div>
+
+            {/* Canva */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="/logo/canva logo.png"
+                   alt="Canva"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>Canva</span>
+            </div>
+
+            {/* Adobe */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Adobe_Acrobat_DC_logo_2020.svg/1200px-Adobe_Acrobat_DC_logo_2020.svg.png"
+                   alt="Adobe"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>Adobe</span>
+            </div>
+
+            {/* Outlook Mail */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg"
+                   alt="Outlook Mail"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>Outlook Mail</span>
+            </div>
+
+            {/* Google Mail */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
+                   alt="Gmail"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>Gmail</span>
+            </div>
+
+            {/* Hootsuite */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="/logo/hootsuite-logo.png"
+                   alt="Hootsuite"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>Hootsuite</span>
+            </div>
+
+            {/* Mailchimp */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="/logo/mailchimp logo.png"
+                   alt="Mailchimp"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>Mailchimp</span>
+            </div>
+
+            {/* DALL-E */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1024px-ChatGPT_logo.svg.png"
+                   alt="DALL-E"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>DALL-E</span>
+            </div>
+
+            {/* Google Docs */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Google_Docs_logo_%282014-2020%29.svg"
+                   alt="Google Docs"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>Google Docs</span>
+            </div>
+
+            {/* Microsoft Word */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg"
+                   alt="Microsoft Word"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>Word</span>
+            </div>
+
+            {/* Excel */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg"
+                   alt="Excel"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>Excel</span>
+            </div>
+
+            {/* PowerPoint */}
+            <div className="tool-item" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg"
+                   alt="PowerPoint"
+                   style={{width: '60px', height: '60px', objectFit: 'contain'}} />
+              <span style={{fontSize: '0.85rem', color: '#555'}}>PowerPoint</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <footer className="footer" style={{marginTop: 'auto'}}>
         <div className="footer-content">
